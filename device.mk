@@ -24,6 +24,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Api level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# fastbootd stuff
+PRODUCT_PACKAGES += \
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+
+
 # Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
 	libion \
