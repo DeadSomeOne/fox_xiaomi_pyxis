@@ -81,9 +81,6 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(DEVICE_PATH)/prebuilt/sdm710.dtb
 # QCOM
 #TARGET_USE_SDCLANG := true
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := pyxis
-
 # Avb
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
@@ -109,9 +106,6 @@ BOARD_SUPER_PARTITION_CUST_DEVICE_SIZE := 1073741824
 BOARD_SUPER_PARTITION_METADATA_DEVICE := system
 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-
-# System as root
-BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
 
 # File systems
 TARGET_USERIMAGES_USE_EXT4 := true
