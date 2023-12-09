@@ -24,6 +24,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Api level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
+# QCOM Decryption
+PRODUCT_PACKAGES += \
+	qcom_decrypt \
+	qcom_decrypt_fbe
+
 # fastbootd stuff
 PRODUCT_PACKAGES += \
     fastbootd \
