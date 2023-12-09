@@ -38,7 +38,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_RECOVERY_SYSTEM_PARTITION="/system"
     export FOX_RECOVERY_VENDOR_PARTITION="/vendor"
     export FOX_USE_TAR_BINARY=1
-	export FOX_USE_SED_BINARY=1
+    export FOX_USE_SED_BINARY=1
     export FOX_USE_BASH_SHELL=1
     export FOX_ASH_IS_BASH=1
     export OF_MAINTAINER="DeadSomeOne"
